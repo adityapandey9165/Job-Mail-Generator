@@ -15,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const api_key = "AIzaSyDJIBoLqh8z7IvDlBNk4pltdl-hpYON1PE";
+  const api_key = process.env.api_key;
 
   async function generateEmail() {
     setLoading(true);
