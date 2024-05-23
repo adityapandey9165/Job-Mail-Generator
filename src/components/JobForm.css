@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.form-container {
+  position: relative;
+  background: linear-gradient(to right, #bdbcbf, #445668);
+  padding: 25px 26px;
+  border-radius: 15px;
+  margin-top: 2px;
+  box-shadow: 0 10px 30px rgba(185, 168, 168, 0.1);
+  width: 30vw;
+
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust height as needed */
+}
+
+.form-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-container:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 15px 40px rgba(133, 46, 46, 0.2);
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input,
+.file-input,
+.button {
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.file-input:focus,
+.button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button {
+  background: #0077b6;
+  color: white;
+  cursor: pointer;
+  font-family: Popi;
+  transition: 0.3s ease;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+
+  padding: 14px;
+}
+
+.button:hover {
+  background: #03045e;
+}
